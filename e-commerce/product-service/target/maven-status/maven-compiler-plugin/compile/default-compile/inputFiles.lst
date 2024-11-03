@@ -1,0 +1,8 @@
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/ProductServiceApplication.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/contoller/ProductController.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/dto/ProductRequest.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/dto/ProductResponse.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/model/Product.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/repository/ProductRepository.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/service/ProductService.java
+/Users/adityaverma/Documents/eCommerce/product-service/src/main/java/com/eCommerce/microservice/product/service/ProductServiceImpl.java
