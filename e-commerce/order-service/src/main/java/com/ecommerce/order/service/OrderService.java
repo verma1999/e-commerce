@@ -16,12 +16,10 @@ public class OrderService {
     private final OrderRepository orderRepository;
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
-        System.out.println("ordering start");
         order.setOrderNumber(UUID.randomUUID().toString());
         order.setPrice(orderRequest.price());
         order.setSkuCode(orderRequest.skuCode());
         order.setQuantity(orderRequest.quantity());
         orderRepository.save(order);
-        System.out.println("ordered");
     }
 }
