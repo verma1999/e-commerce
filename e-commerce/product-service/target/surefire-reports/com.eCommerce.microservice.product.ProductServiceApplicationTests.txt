@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.eCommerce.microservice.product.ProductServiceApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.707 s -- in com.eCommerce.microservice.product.ProductServiceApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.905 s -- in com.eCommerce.microservice.product.ProductServiceApplicationTests
