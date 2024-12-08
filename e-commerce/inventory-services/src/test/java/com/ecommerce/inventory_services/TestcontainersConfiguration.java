@@ -1,21 +1,18 @@
-package com.ecommerce.order;
+package com.ecommerce.inventory_services;
 
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.springframework.context.annotation.Bean;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
-public class TestOrderServiceApplication {
+@TestConfiguration(proxyBeanMethods = false)
+class TestcontainersConfiguration {
 
 	@Bean
 	@ServiceConnection
 	MySQLContainer<?> mysqlContainer() {
 		return new MySQLContainer<>(DockerImageName.parse("mysql:latest"));
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.from(OrderServiceApplication::main).with(TestOrderServiceApplication.class).run(args);
 	}
 
 }
