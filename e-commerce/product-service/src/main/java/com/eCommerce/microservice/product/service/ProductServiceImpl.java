@@ -21,13 +21,14 @@ public class ProductServiceImpl implements ProductService {
     public ProductResponse createProduct(ProductRequest productRequest) {
         Product product = Product.builder()
                 .name(productRequest.name())
+                .skuCode((productRequest.skuCode()))
                 .description(productRequest.description())
                 .price(productRequest.price())
                 .build();
 
         productRepository.save(product);
         log.info("Product {} is saved", product.getId());
-        return new ProductResponse(product.getId(), product.getName(), product.getDescription(), product.getPrice());
+        return new ProductResponse(product.getId(), product.getName(), product.getSkuCode(), product.getDescription(), product.getPrice());
     }
 
     @Override
@@ -37,6 +38,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     private ProductResponse mapToProductResponse(Product product){
-        return new ProductResponse(product.getId(), product.getName(), product.getDescription(), product.getPrice());
+        return new ProductResponse(product.getId(), product.getName(), product.getSkuCode(), product.getDescription(), product.getPrice());
     }
 }
